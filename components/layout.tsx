@@ -38,7 +38,7 @@ const Layout: React.FC<Props> = (props: Props) => {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/profile.webp"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -52,7 +52,7 @@ const Layout: React.FC<Props> = (props: Props) => {
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src="/images/profile.webp"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
