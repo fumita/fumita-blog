@@ -45,20 +45,6 @@ const Layout: React.FC<Props> = (props: Props) => {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <div>
-              <Link href="https://github.com/fumita">
-                <a>
-                  <Image
-                    priority
-                    src="/images/github.png"
-                    className={utilStyles.borderCircle}
-                    height={32}
-                    width={32}
-                    alt={"github"}
-                  />
-                </a>
-              </Link>
-            </div>
           </>
         ) : (
           <>
