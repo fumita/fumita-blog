@@ -18,11 +18,26 @@ const Home: React.FC<Props> = (props: Props) => {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Software Engineer</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        <p className={utilStyles.center}>
+          Software Engineer at&nbsp;
+          <Link href="https://corp.funds.jp/">Funds, inc.</Link>
         </p>
+        <ul>
+          <li>
+            Mail:&nbsp;
+            <Link href={"mailto:maikiilion@gmail.com"}>
+              maikiilion@gmail.com
+            </Link>
+          </li>
+          <li>
+            Github:&nbsp;
+            <Link href="https://github.com/fumita">github.com/fumita</Link>
+          </li>
+          <li>
+            Twitter:&nbsp;
+            <Link href="https://twitter.com/maikii_chan">@maikii_chan</Link>
+          </li>
+        </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
