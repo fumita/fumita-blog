@@ -1,20 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
 import React from "react";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Fumita Suzuki'
-export const siteTitle = 'Fumita blog'
+const name = "Fumita Suzuki";
+export const siteTitle = "Fumita blog";
 
 type Props = {
-  children: React.ReactNode
-  home: React.ReactNode
-}
+  children: React.ReactNode;
+  home: React.ReactNode;
+};
 
 const Layout: React.FC<Props> = (props: Props) => {
-  const {home, children} = props
+  const { home, children } = props;
   return (
     <div className={styles.container}>
       <Head>
@@ -76,7 +76,7 @@ const Layout: React.FC<Props> = (props: Props) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
