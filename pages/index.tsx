@@ -1,12 +1,17 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-// @ts-ignore
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import React from "react";
 
-export default function Home({ allPostsData }) {
+type Props = {
+  allPostsData: { id: string; date: string; title: string }[];
+};
+
+const Home: React.FC<Props> = (props: Props) => {
+  const { allPostsData } = props;
   return (
     <Layout home>
       <Head>
@@ -37,7 +42,9 @@ export default function Home({ allPostsData }) {
       </section>
     </Layout>
   );
-}
+};
+
+export default Home;
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
